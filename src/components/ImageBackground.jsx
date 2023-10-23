@@ -1,7 +1,9 @@
 import React from 'react'
+import fondo from '../images/Fondo.jpg';
 
 export const ImageBackground = () => {
   return (
-    <div class="grid-block" ></div>
+    <img src={fondo} alt="" className='img-fondo' />
+    // <div class="grid-block" ></div>
   )
 }

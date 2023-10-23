@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContentPreLogin,ImageBackground } from "../components";
+import { ContentPreLogin, ImageBackground } from "../components";
 
 export const HomePage = () => {
   return (

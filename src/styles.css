@@ -4,18 +4,13 @@ html, body{
     /* background-color: #000; */
   }
 .bg-pre-login{
-    background-image: url('./images/Fondo.jpg') ;
-    width: auto;
-    height: 100vh;
-    background-size: cover;
-    /* position: relative; */
-    background-repeat: no-repeat;
-    flex:2;
-    display:flex;
+  display: flex;
+  grid-row: 1;
+  grid-column: 1 / -1;
 }
 
 .logo{
-    background-image: url('./images/logotipo-02.png') ;
+    /* background-image: url('./images/logotipo-02.png') ; */
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -26,31 +21,56 @@ html, body{
 }
 
 .contenedor {
-    display:flex;
-    flex-direction: row;
-    min-height:100%;
-  }
+  display: grid;
+  height: 100vh;
+}
 
-  .content-options{
-    display:flex;
-    flex-direction: column;
-    min-height:100%;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-  }
+.content-options{
+  margin: 1rem 2rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
 
+.contenedor-pre-login {
+  background-color: rgb(1, 1, 68);
+  display: grid;
+  grid-row: 1;
+  grid-column: 1 / -1;
+  z-index: 1;
+  width: 33%;
+  align-content: center;
+}
+
+.p-white {
+  color: white;
+}
+
+.inputs-login{
+  flex-direction: column;
+  flex: 1;
+}
+
+.img-fondo{
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-logo{
+  width: 70%;
+  justify-self: center;
+}
+
+@media screen and (max-width: 1400px) {
   .contenedor-pre-login {
-    background-color: rgb(1, 1, 68);
-    flex:1;
-    display:flex;
+    width: 40%;
   }
+}
 
-  .p-white {
-    color: white;
-  }
 
-  .inputs-login{
-    flex-direction: column;
-    flex: 1;
+@media screen and (max-width: 850px) {
+  .contenedor-pre-login {
+    width: 100%;
   }
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import logo from '../images/logotipo-02.png';
 
 export const ContentPreLogin = () => {
   const navigate = useNavigate()
@@ -16,13 +17,14 @@ export const ContentPreLogin = () => {
   }
   return (
     <div className='content-options'>
-        <div className="m-5 logo" style={{'flex':1}}>
-        </div>
+        {/* <div className="m-5 logo" style={{'flex':1}}>
+        </div> */}
+        <img src={logo} alt="" className='img-logo'/>
         <div className="mt-4" style={{'flex':1}}>
             <h2 className='p-white'>Hola, bienvenido</h2>
             <span className='p-white'>Estamos contentos de verte.</span>
         </div>
-        <div className="" style={{'flex':1}}>
+        <div className="" style={{'margin-top': '3rem'}}>
             <button className='btn btn-primary btn-lg btn-block' style={{'border-radius': '30px'}} onClick={onLogin}>Iniciar sesión</button>
             <p className='p-white mt-5'>¿Aún no tienes una cuenta? Rigistrate</p>
             <button className='btn btn-outline-primary btn-lg btn-block p-white' style={{'border-radius': '30px'}} onClick={onRegister}>Registrarse</button>
