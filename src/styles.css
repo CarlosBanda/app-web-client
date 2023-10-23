@@ -4,9 +4,9 @@ html, body{
     /* background-color: #000; */
   }
 .bg-pre-login{
-  display: flex;
   grid-row: 1;
   grid-column: 1 / -1;
+  height: 100vh;
 }
 
 .logo{
@@ -55,6 +55,7 @@ html, body{
 .img-fondo{
   width: 100%;
   object-fit: cover;
+  height: 100%;
 }
 
 .img-logo{
