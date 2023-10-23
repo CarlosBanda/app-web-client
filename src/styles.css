@@ -1,0 +1,56 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    /* background-color: #000; */
+  }
+.bg-pre-login{
+    background-image: url('./images/Fondo.jpg') ;
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    /* position: relative; */
+    background-repeat: no-repeat;
+    flex:2;
+    display:flex;
+}
+
+.logo{
+    background-image: url('./images/logotipo-02.png') ;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    /* position: relative; */
+    background-repeat: no-repeat;
+    flex:2;
+    display:flex;
+}
+
+.contenedor {
+    display:flex;
+    flex-direction: row;
+    min-height:100%;
+  }
+
+  .content-options{
+    display:flex;
+    flex-direction: column;
+    min-height:100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .contenedor-pre-login {
+    background-color: rgb(1, 1, 68);
+    flex:1;
+    display:flex;
+  }
+
+  .p-white {
+    color: white;
+  }
+
+  .inputs-login{
+    flex-direction: column;
+    flex: 1;
+  }
