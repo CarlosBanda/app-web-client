@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { HomePage, LoginPage, RegisterPage } from "../pages/";
+import { DevicePage, HomePage, LoginPage, NavbarPage, RegisterPage } from "../pages/";
 
 const router = createBrowserRouter([
     {
@@ -14,8 +14,12 @@ const router = createBrowserRouter([
         path: "/register-clients",
         element: <RegisterPage></RegisterPage>
     },
+    {
+        path: "/panel",
+        element: <NavbarPage></NavbarPage>
+    }    
     // {
-    //     path: "/",
+    //     path: "/panel",
     //     element: <HeroesRoutes></HeroesRoutes>,
     //     children: childHeroesRoutes
     // }    
